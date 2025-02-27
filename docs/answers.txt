@@ -1,0 +1,192 @@
+Amy Brightbill
+02/24/2025
+CEN4020
+
+Git Lab Tutorials:
+1. Access "Learn Git Branching"
+
+1.1: Main- Introduction Sequence
+
+1.1.1: Git Commits 2/24/2025
+-Learned how to do a 'git commit'.
+
+1.1.2: Git Branches 2/24/2025
+-Learned how to branch from a commit using the command,
+'git branch (nameofbranch)'.
+-Learned how to checkout the branch with
+'git checkout (nameofbranch)'
+-For this test, we branch and check out the branch, bugFix.
+
+1.1.3: Branches and Merging 2/25/2025
+-For this tutorial, I learned how to checkout and merge
+two branches.
+
+1.1.4: Git Rebase 2/25/2025
+-For this tutorial, I learned how to rebase from main.
+- I checked out a second branch, commited, checked out main,
+committed, and then rebased the second branch to the main.
+
+1.2:Remote - Push & Pull - Git Remote 2/25/2025
+
+1.2.1: Git Clone 2/25/2025
+-I learned how to do a git clone to have a copy of the branch.
+
+1.2.2: Checking out Remote 2/25/2025
+-I learned how to checkout the remote branch.
+
+1.2.3: Git fetch 2/25/2025
+-I learned how to use git fetch, which
+downloads commits that remote branch has but
+was missing from our local repository, and
+updates where our remote branch is.
+
+1.2.4: Git Pull 2/26/2025
+-For git pull, I learned that it is basically
+a git fetch and a git merge.
+
+1.2.5: Stimulating Collaboration 2/26/2025
+-I learned how to commit to a branch twice,
+pull the the branch to make a fake teamowrk commit.
+
+1.2.6: Git Push 2/26/2025
+-I learned that 'git push' is used to upload
+shared work by doing two commits and then pushing
+the changes.
+
+1.2.7: Git Fetching 2/26/2025
+- I learned how to rebase my branch to ensure
+my changes can merge to develop, and then pushed it.
+
+1.2.8: Remote Rejected 2/26/2025
+-I learned that remote branches can be rejected
+due to the policy of a pull request.
+
+----------------------------------------
+
+2.0: Access "Visualizing Git 2/26/2025
+2.1:git log
+-Shows the commits
+
+2.2:git commit
+- makes a commit on current branch
+
+2.3:git commit
+- makes a commit on current branch
+
+2.4:git commit -m="third"
+- makes a commit on current branch with message, third
+
+2.5:git branch dev
+-makes a new branch called dev
+
+2.6:git commit -m=“commit master”
+- makes a commit on master called "comit master"
+
+2.7:git checkout dev
+-switches to the dev branch
+
+2.8:git commit
+-commits to the dev branch
+
+2.9:git commit
+-commits to the dev branch again
+
+2.10:git commit
+-commits to the dev branch again
+
+2.11:git log
+-displays all of the messages made in all current branches
+
+2.12:git branch newFeature
+-makes a new branch off of dev called 'newFeature'
+
+2.13:git merge master
+-merges the branch dev to master
+
+2.14:git commit
+-commits again on the branch dev
+
+----------------------------------------
+3.0: More tutorials
+-When accessing the link, 'http://try.github.io/',
+It would not allow me to see the webpage. Therefore, I
+found a tutorial myself. I read the article, "Git Tutorial"
+from the link, 'https://www.w3schools.com/git/'.
+
+----------------------------------------
+
+Setup:
+1. I downloaded the gitclient, 'GitHub Desktop'. last month
+2. I have a github account called, 'AmyJBrightbill'. last month
+3. I forked 'assignment2' and named it 'CEN4020_assignment2'. 2/26/2025
+
+Repo:
+'https://github.com/AmyJBrightbill/CEN4020_assignment2'
+
+----------------------------------------
+
+Repository Tasks:
+1. I added my name and FSUID to the readme.
+2. I comitted my changes to the master branch.
+3. I did 'git status', and it said my branch is ahead by one commit of master.
+   I then did a 'git push'.
+4. I created this file inside the docs folder as empty.
+
+----------------------------------------
+ANSWERS FOR 'answers.txt'
+
+5.Questions
+
+5.1: Output of 3.C:
+"
+AmyJB@Amy MINGW64 ~/OneDrive/Documents/GitHub/CEN4020_assignment2 (master)
+$ git push
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 314 bytes | 104.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/AmyJBrightbill/CEN4020_assignment2.git
+   f4975e5..c839fde  master -> master
+"
+
+5.2: 'git rev-list --count HEAD' Will tell me the total commits
+in a git repository. When I did this, it told me there have
+been 9 total commits.
+
+5.3: 'git log README.md" Will tell me the last time it has been updated.
+This was its output 'Wed Feb 26 23:51:43 2025 -0600'.
+
+5.4: Two reasons branches are used in a repository is to make changes
+to the code without risking the stability of the already functional code,
+and to also isolate works from multiple developers at once.
+
+5.5: Git log tells you the comitted history, while git status
+shows the current state of the directory.
+
+5.6: To see the commits of 'Vehicle.h', you would do,
+'git log Vehicle.h'
+
+5.7: To see if a commit message has the word "file", you would do,
+'git log --grep="file"'
+
+5.8:
+Inheritance - When a class gets the properties of an existing class.
+Polymorphism - When classess create their own meaning of the same method call.
+Encapsulation - Having a class that restricts direct access to some parts of the class.
+ex: Using modifiers such as public, private protected
+
+5.9 Dictator and Lieutenants workflow has a heirarchial layer for
+handling integration, which is a benefit for large projects, while
+the Integration Manager workflow is made more for the idea of one person
+or a small group, since there is a central integration policy all follow.
+
+5.10.
+A team of 100 developers would benefit from Dictator and Lieutenants
+workflow, because their would be multiple levels of review, since there would be
+the developers producing code, then the lieutanants doing code review and polishing,
+and then the dictator, who decides what ends up being in the blessed repo. With this,
+there would be less conflicts with the main repository.
